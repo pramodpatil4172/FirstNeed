@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FirstNeeds.Behaviors"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d"
+             x:Class="FirstNeeds.Views.SignInPage" 
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Splash.jpg"  >
+    <ContentPage.Content>
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="EndAndExpand"
+                         HorizontalOptions="CenterAndExpand"
+                         Margin="10">
+
+                <Label Text="+91" FontSize= "Medium" TextColor="Black" Margin="0,10,0,0" />
+
+            <Entry x:Name="mobileNumberEntry" MaxLength="10"
+                   Placeholder="MOBILE NUMBER"
+                   Keyboard="Numeric" 
+                   FontSize= "Medium" TextColor="Black"  >
+                
+                <!--<Entry.Behaviors>-->
+                    <!--<local:MaxLengthValidatorBehavior  MaxLength="10"/>-->
+                    <!--<local:NumberValidationBehavior/>-->
+                <!--</Entry.Behaviors>-->
+
+            </Entry>
+
+            <Button Text="SIGN IN"  FontSize= "Medium" TextColor="Black" 
+                        BackgroundColor="GreenYellow" Clicked="SignIn_Clicked"/>
+
+            <!--<Frame BackgroundColor="#13CF13" Padding="5" HorizontalOptions="Center" WidthRequest="80" HeightRequest="20" CornerRadius="40">
+                <Label WidthRequest="40" Text="Backlog" HorizontalTextAlignment="Center"></Label>
+            </Frame>-->
+
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

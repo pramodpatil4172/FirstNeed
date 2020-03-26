@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstNeeds.Views.SMSVerificationPage" Title="SIGNING IN">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout Margin="0,50,0,0">
+                <Entry x:Name="verificationCodeEntry" Keyboard="Numeric" HorizontalTextAlignment="Center"
+                        WidthRequest="200" MaxLength="6" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+
+                <Label Text="ENTER SMS VERIFICATION CODE" FontSize= "Medium" 
+                       TextColor="Gray" HorizontalOptions="CenterAndExpand"   />
+                <Button Text="CONFIRM"  FontSize= "Medium" TextColor="Black" 
+                        BackgroundColor="GreenYellow" Clicked="CONFIRM_Clicked"/>
+            </StackLayout>
+
+
+            <!--<StackLayout Margin="20" Orientation="Horizontal" HorizontalOptions="Center"
+                         VerticalOptions="EndAndExpand">
+                <Button Text="RESEND CODE"  FontSize= "Medium" TextColor="Black" 
+                        BackgroundColor="Gray" Clicked="RESENDCODE_Clicked"/>
+                <Button Text="CONFIRM"  FontSize= "Medium" TextColor="Black" 
+                        BackgroundColor="GreenYellow" Clicked="CONFIRM_Clicked"/>
+            </StackLayout>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
